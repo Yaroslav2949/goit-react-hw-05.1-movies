@@ -1,16 +1,11 @@
-const SearchBar = ({  onSubmitSearchBar }) => {
+import { Button, Form, Input } from './SearchBar.styled';
+const SearchBar = ({ onSubmitSearchBar }) => {
   return (
-    <form onSubmit={onSubmitSearchBar}>
-      <input
-        type="text"
-        name="query"
-        placeholder="Search movies"
-        
-       
-      />
+    <Form onSubmit={onSubmitSearchBar}>
+      <Input type="text" name="query" placeholder="Search movies" />
 
-      <button type="submit">Searh Movie</button>
-    </form>
+      <Button type="submit">Searh Movie</Button>
+    </Form>
   );
 };
 export default SearchBar;
